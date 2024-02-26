@@ -17,6 +17,18 @@
 
 ![test.jpeg](./img/test.jpeg)
 
+### Lambda Input
+```json
+{
+  "Bucket": "YOUR_BUCKET_NAME",
+  "Key": "YOUR_IMAGE_KEY",
+  "TargetLanguages": [
+    "en",
+    "ko"
+  ]
+}
+```
+
 ### 결과 예시
 
 ```json
@@ -61,7 +73,7 @@
 1. [AWS Account](https://aws.amazon.com/ko/resources/create-account/)
 2. [AdministratorAccess](https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) 권한이 있는 AWS 사용자
     1. 또는 3.에서 생성하는 저장소에 대한 Push 권한이 사용자에게 있어야합니다.
-    2. CLI 환경에서 컨테너 이미지를 배포해야하기 때문에 [AWS CLI](https://aws.amazon.com/ko/cli/) 사용 설정이 필요합니다.
+    2. CLI 환경에서 컨테이너 이미지를 배포해야하기 때문에 [AWS CLI](https://aws.amazon.com/ko/cli/) 사용 설정이 필요합니다.
 3. [Amazon ECR(Elastic Container Registry)](https://aws.amazon.com/ko/ecr/) 저장소 생성
     1. [해당 링크](https://ap-northeast-2.console.aws.amazon.com/ecr/create-repository?region=ap-northeast-2)에서 `detect-text-lambda-with-easyocr` 으로 프라이빗 저장소를 생성합니다.
         ![create-ecr.png](./img/create-ecr.png)
